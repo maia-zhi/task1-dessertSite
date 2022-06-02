@@ -1,0 +1,166 @@
+
+.header {   
+    .container-l {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            a {
+                img {
+                    height: 40px;
+                    padding: 30px 0px;
+                }
+            }
+        }
+        nav {
+            width: 35%;
+            .menu {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    a {
+                       color: $green; 
+                       font: normal normal 600 16px/73px PingFang TC;
+                    }
+                    .cart {
+                        color: $green;
+                        padding-left: 50px;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+.content {
+    .container-l {
+        .banner {
+            margin-bottom: 60px;
+            img {
+                width: 100%;
+            }
+        }
+        .product-box {
+            display: flex;
+            .sidebar {
+                flex: 1;
+                h3 {
+                    margin: 0;
+                    padding: 16px 0px;
+                    background-color: $green;
+                    color: $light-green;
+                    text-align: center;
+                    font-size: 24px;
+                    border: solid 1px $green;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        a {
+                            display: block;
+                            padding: 15px 0px;
+                            font-size: 24px;
+                            color: $green;
+                            border: solid 1px $light-green;
+                            text-align: center;
+                        }
+                        &:hover {
+                            background-color: $light-green;
+                        }
+                    }
+                }
+            }
+            .products {
+                flex: 2;
+                .product {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        width: 50%;
+                        box-sizing: border-box;
+                        padding-left: 20px;
+                        position: relative;
+                        margin-bottom: 20px;
+                        .dislike {
+                            position: absolute;
+                            top: 19px;
+                            right: 22px;
+                            color: $green;
+                        }
+                        .tag {
+                            box-sizing: border-box;
+                            position: absolute;
+                            top: 0;
+                            left: 36px;
+                            font: normal normal 600 16px/20px PingFang TC;
+                            width: 36px;
+                            padding: 10px;
+                            background-color: $green;
+                            color: $light-green;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                        .pro-title {
+                            margin-top: -5px;
+                            font-family: PingFang TC;
+                            display: flex;
+                            color: $green;
+                            text-align: center;
+                            .name {
+                                padding: 14px;
+                                width: 55%;
+                                font-weight: 300;
+                                border: solid 1px $light-green;
+                            }
+                            .price {
+                                padding: 14px;
+                                width: 45%;
+                                font-weight: 600;
+                                border: solid 1px $light-green;
+                            }
+                        }
+                        .addtoCart {
+                            display: block;
+                            padding: 16px;
+                            text-align: center;
+                            background-color: $light-green;
+                            font-size: 16px;
+                            color: $green;
+                        }
+                    }
+                }
+                .pagination {
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    li {
+                        width: 60px;
+                        height: 60px;
+                        border: solid 1px $light-green;
+                        font-size: 20px;
+                        text-align: center;
+                        a {
+                            color: $green;
+                            display: block;
+                            padding: 18px;
+                            }
+                        }
+                        .page {
+                            &:hover {
+                                background-color: $green;
+                                color: $light-green;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
